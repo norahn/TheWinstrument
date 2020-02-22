@@ -1,0 +1,23 @@
+{
+    "sounds": [
+        {
+            "name": "Regular Piano",
+            "sounds":
+            [
+                {
+                    "soundName": "Piano C",
+                    "src": "sounds/piano-c.wav"
+                },
+                {
+                    "soundName": "Piano D",
+                    "src": "sounds/piano-d.wav"
+                },
+                {
+                    "soundName": "Piano E",
+                    "src": "sounds/piano-e.wav"
+                }
+            ]
+
+        }
+    ]
+}
