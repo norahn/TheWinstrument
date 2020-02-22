@@ -1,13 +1,13 @@
 import React from 'react';
 import MusicButton from './MusicButton.js';
 import '../css/instrument.css';
-import $ from 'jquery'; 
+import $ from 'jquery';
+import axios from 'axios';
 
 class Instrument extends React.Component {
   constructor(props) {
       super(props);
-
-      this.state = {sounds: {}};
+      this.state = {instruments: []};
   }
 
   componentDidMount() {
@@ -15,19 +15,36 @@ class Instrument extends React.Component {
   }
 
   FetchSounds() {
-    $.getJSON('http://10.152.21.190:5000/api/sounds/all')
-          .then(({ results }) => this.setState({ sounds: results }));
+          axios.get('http://localhost:5000/api/sounds/all').then(
+            result => {
+              this.setState({
+                instruments: result.data
+              });
+            },
+            error => {
+              console.log(error)
+            }
+            );
   }
 
   render() {
-    var notes = ['A','B','C','D','E','F','G','H'];
-    var colors = ['red','pink','orange','yellow','green','lightblue','blue','purple'];
+    var colors = ['brown','red', 'darkSalmon', 'pink', 'orange','yellow', 'yellowgreen','green','lightblue','blue','purple', 'indigo'];
+    var instrumentName = 'None Picked';
+    var sounds = [];
+    if (this.state.instruments.sounds !== undefined) {
+      instrumentName = this.state.instruments.sounds[0].name;
+      sounds = this.state.instruments.sounds[0].sounds;
+    }
+
     return (
-      <div className="loop">
-      {notes.map((note, i) => {
-        return <MusicButton name={note} color={colors[i]} textColor={colors[i]} url={'http://shing.mobile9.com/download/media/702/angrybirds_oaw366ij.mp3'}></MusicButton>
-      })}
-    </div>
+      <div>
+        <h1>{instrumentName}</h1>
+        <div className="loop">
+        {sounds.map((sound, i) => {
+          return <MusicButton name={sound.soundName} color={colors[i]} textColor={colors[i]} url={'http://localhost:5000/'+sound.src}></MusicButton>
+        })}
+        </div>
+      </div>
     );
   }
 }

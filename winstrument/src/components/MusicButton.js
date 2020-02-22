@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from './Button.js';
+import '../css/musicButton.css';
+
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
   const [playing, setPlaying] = useState(false);
@@ -7,7 +9,8 @@ const useAudio = url => {
   const toggle = () => setPlaying(!playing);
 
   useEffect(() => {
-      playing ? audio.play() : audio.pause();
+      console.log(audio)
+      playing ? audio.play() : audio.play();
     },
     [playing]
   );
