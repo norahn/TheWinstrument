@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Music from './PlaySound.js';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Music url={'http://shing.mobile9.com/download/media/702/angrybirds_oaw366ij.mp3'}/>
     </div>
   );
 }
