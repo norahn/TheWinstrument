@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './button.css';
+import '../css/button.css';
 
 class Button extends React.Component {
   constructor(props) {
       super(props);
   }
   render() {
-    const { color } = this.props;
+    const { color, onClick} = this.props;
     return (
-      <svg className="vinylBtn" style={{color:this.props.color, width:"20%", height:"20%"}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="record-vinyl"
+      <svg className="vinylBtn" onClick={this.props.onClick} style={{color:this.props.color, width:"100%", height:"100%"}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="record-vinyl"
       className="svg-inline--fa fa-record-vinyl fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512">
       <path fill="currentColor" d="M256 152a104 104 0 1 0 104 104 104 104 0 0 0-104-104zm0 128a24
