@@ -2,11 +2,7 @@ import React from 'react';
 import '../css/button.css';
 
 class Button extends React.Component {
-  constructor(props) {
-      super(props);
-  }
   render() {
-    const { color, onClick} = this.props;
     return (
       <svg onClick={this.props.onClick} style={{color:this.props.color, width:"95%", height:"95%"}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="record-vinyl"
       className="svg-inline--fa fa-record-vinyl fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
