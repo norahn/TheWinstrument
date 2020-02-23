@@ -1,0 +1,15 @@
+.loop {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+h1 {
+  color: white;
+  font-family: 'Open Sans Condensed';
+  font-size: xxx-large;
+  text-decoration: underline;
+}

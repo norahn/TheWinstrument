@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Button from './Button.js';
+import '../css/musicButton.css';
 
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
@@ -7,7 +9,8 @@ const useAudio = url => {
   const toggle = () => setPlaying(!playing);
 
   useEffect(() => {
-      playing ? audio.play() : audio.pause();
+      console.log(audio)
+      playing ? audio.play() : audio.play();
     },
     [playing]
   );
@@ -22,14 +25,15 @@ const useAudio = url => {
   return [playing, toggle];
 };
 
-const Music = ({ url }) => {
+const MusicButton = ({ url, color, name, textColor}) => {
   const [playing, toggle] = useAudio(url);
 
   return (
     <div>
-      <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+      <p style={{color:textColor}}>{name}</p>
+      <Button color={color} onClick={toggle}></Button>
     </div>
   );
 };
 
-export default Music;
+export default MusicButton;
