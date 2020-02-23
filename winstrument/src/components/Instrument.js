@@ -32,8 +32,8 @@ class Instrument extends React.Component {
     var instrumentName = 'None Picked';
     var sounds = [];
     if (this.state.instruments.sounds !== undefined) {
-      instrumentName = this.state.instruments.sounds[0].name;
-      sounds = this.state.instruments.sounds[0].sounds;
+      instrumentName = this.state.instruments.sounds[1].name;
+      sounds = this.state.instruments.sounds[1].sounds;
     }
 
     return (
