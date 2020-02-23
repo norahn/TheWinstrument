@@ -5,19 +5,93 @@
             "sounds":
             [
                 {
-                    "soundName": "Piano C",
+                    "soundName": "C",
                     "src": "sounds/piano-c.wav"
                 },
                 {
-                    "soundName": "Piano D",
+                    "soundName": "C#",
+                    "src": "sounds/piano-ciss.wav"
+                },
+                {
+                    "soundName": "D",
                     "src": "sounds/piano-d.wav"
                 },
                 {
-                    "soundName": "Piano E",
+                    "soundName": "D#",
+                    "src": "sounds/piano-eb.wav"
+                },
+                {
+                    "soundName": "E",
                     "src": "sounds/piano-e.wav"
+                },
+                {
+                    "soundName": "F",
+                    "src": "sounds/piano-f.wav"
+                },
+                {
+                    "soundName": "F#",
+                    "src": "sounds/piano-fiss.wav"
+                },
+                {
+                    "soundName": "G",
+                    "src": "sounds/piano-g.wav"
+                },
+                {
+                    "soundName": "G#",
+                    "src": "sounds/piano-giss.wav"
+                },
+                {
+                    "soundName": "A",
+                    "src": "sounds/piano-a.wav"
+                },
+                {
+                    "soundName": "A#",
+                    "src": "sounds/piano-bb.wav"
+                },
+                {
+                    "soundName": "B",
+                    "src": "sounds/piano-b.wav"
                 }
             ]
 
-        }
+        },
+        {
+            "name": "Elephants",
+            "sounds":
+            [
+              {
+                  "soundName": "1",
+                  "src": "sounds/elephant1.wav"
+              },
+              {
+                  "soundName": "2",
+                  "src": "sounds/elephant2.wav"
+              },
+              {
+                  "soundName": "3",
+                  "src": "sounds/elephant3.wav"
+              },
+              {
+                  "soundName": "4",
+                  "src": "sounds/elephant4.wav"
+              },
+              {
+                  "soundName": "5",
+                  "src": "sounds/elephant5.wav"
+              },
+              {
+                  "soundName": "6",
+                  "src": "sounds/elephant6.wav"
+              },
+              {
+                  "soundName": "7",
+                  "src": "sounds/elephant7.wav"
+              },
+              {
+                  "soundName": "8",
+                  "src": "sounds/elephant8.wav"
+              }
+            ]
+          }
     ]
 }
