@@ -1,12 +1,13 @@
 import json
 import flask
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flask import request, jsonify, send_from_directory
 from soundhandler import *
 
 app = flask.Flask(__name__, static_url_path='')
 app.config["DEBUG"] = True
-CORS(app)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/sounds/<path:path>')
 def send_sound(path):

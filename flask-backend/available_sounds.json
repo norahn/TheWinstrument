@@ -92,6 +92,119 @@
                   "src": "sounds/elephant8.wav"
               }
             ]
-          }
+          },
+          {
+            "name": "Order Piano",
+            "sounds":
+            [
+                {
+                    "soundName": "O-1",
+                    "src": "sounds/order-1.wav"
+                },
+                {
+                    "soundName": "O-2",
+                    "src": "sounds/order-2.wav"
+                },
+                {
+                    "soundName": "O-3",
+                    "src": "sounds/order-3.wav"
+                },
+                {
+                    "soundName": "O-4",
+                    "src": "sounds/order-4.wav"
+                },
+                {
+                    "soundName": "O-5",
+                    "src": "sounds/order-5.wav"
+                },
+                {
+                    "soundName": "O-6",
+                    "src": "sounds/order-6.wav"
+                },
+                {
+                    "soundName": "O-7",
+                    "src": "sounds/order-7.wav"
+                },
+                {
+                    "soundName": "O-8",
+                    "src": "sounds/order-8.wav"
+                },
+                {
+                    "soundName": "O-9",
+                    "src": "sounds/order-9.wav"
+                },
+                {
+                    "soundName": "O-10",
+                    "src": "sounds/order-10.wav"
+                },
+                {
+                    "soundName": "O-11",
+                    "src": "sounds/order-11.wav"
+                },
+                {
+                    "soundName": "O-12",
+                    "src": "sounds/order-12.wav"
+                }
+
+            ]
+
+        },
+        {
+            "name": "Goat Piano",
+            "sounds":
+            [
+                {
+                    "soundName": "G-1",
+                    "src": "sounds/goat-0.wav"
+                },
+                {
+                    "soundName": "G-2",
+                    "src": "sounds/goat-1.wav"
+                },
+                {
+                    "soundName": "G-2",
+                    "src": "sounds/goat-2.wav"
+                },
+                {
+                    "soundName": "G-3",
+                    "src": "sounds/goat-3.wav"
+                },
+                {
+                    "soundName": "G-4",
+                    "src": "sounds/goat-4.wav"
+                },
+                {
+                    "soundName": "G-5",
+                    "src": "sounds/goat-5.wav"
+                },
+                {
+                    "soundName": "G-6",
+                    "src": "sounds/goat-6.wav"
+                },
+                {
+                    "soundName": "G-7",
+                    "src": "sounds/goat-7.wav"
+                },
+                {
+                    "soundName": "G-8",
+                    "src": "sounds/goat-8.wav"
+                },
+                {
+                    "soundName": "G-9",
+                    "src": "sounds/goat-9.wav"
+                },
+                {
+                    "soundName": "G-10",
+                    "src": "sounds/goat-10.wav"
+                },
+                {
+                    "soundName": "G-11",
+                    "src": "sounds/goat-11.wav"
+                }
+
+            ]
+
+        }
+
     ]
 }
